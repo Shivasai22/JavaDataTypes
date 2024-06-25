@@ -1,15 +1,14 @@
-// Interface
 interface intexample {
     int add(int a, int b);
 }
 
-class test implements intexample {
+class intclass1 implements intexample {
     public int add(int a, int b) {
         return a + b;
     }
 
     public static void main(String args[]) {
-        test t = new test();
-        System.out.println("Sum = " + t.add(4, 6));
+        intclass1 obj = new intclass1();
+        System.out.println("Sum = " + obj.add(4, 6));
     }
 }
